@@ -2,8 +2,9 @@
   if(window.sq){
      window.sq.closed && window.document.dispatchEvent(new Event('squirt.again'));
   } else {
-    window.sq = {};
-    window.sq.userId = '--squirtUser--';
+    window.sq = {
+      userId = '--squirtUser--'
+    };
     s = document.createElement('script');
     s.src = 'http://www.squirt.io/bm/squirt.js';
     s.s = window.location.search;
